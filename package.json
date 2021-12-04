@@ -1,0 +1,34 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoanglv-0162/Nodejs-blog.git"
+  },
+  "keywords": [
+    "blog",
+    "nodejs",
+    "nodejs",
+    "blog",
+    "blog",
+    "nodejs"
+  ],
+  "author": "lvhoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoanglv-0162/Nodejs-blog/issues"
+  },
+  "homepage": "https://github.com/hoanglv-0162/Nodejs-blog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
