@@ -27,14 +27,12 @@
   },
   "homepage": "https://github.com/hoanglv-0162/Nodejs-blog#readme",
 
-  "lint-stage": {
+  "lint-staged": {
     "src/**/*.{js, json, scss}":"prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-stage",
-      "pre-push": "npm test",
-      "...": "..."
+      "pre-commit": "lint-staged"
     }
   },
 
