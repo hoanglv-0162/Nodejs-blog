@@ -26,7 +26,7 @@ app.engine(
 // console.log("Path: " + path.join(__dirname, 'resource/views'))
 
 // Route init
-route(app);
+        route(app);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
