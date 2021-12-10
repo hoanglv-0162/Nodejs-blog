@@ -21,8 +21,8 @@ app.engine(
         extname: '.hbs',
     }),
 );
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resource', 'views'));
+        app.set('view engine', 'hbs');
+  app.set('views', path.join(__dirname, 'resource', 'views'));
 // console.log("Path: " + path.join(__dirname, 'resource/views'))
 
 // Route init
