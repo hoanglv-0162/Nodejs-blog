@@ -60,10 +60,31 @@ class CourseController {
             .catch(next)
     }
 
-    // DELETE /courses/:id
+    // PATCH /courses/:id/restore
+    restore(req, res, next) {
+        // res.json(req.body)
+        Course.restore({_id: req.params.id})
+            .then(() => {
+                res.redirect('back')
+            })
+            .catch(next)
+    }
+
+    // DELETE /courses/:id/destroy
     destroy(req, res, next) {
         // res.json(req.body)
         Course.deleteOne({_id: req.params.id}, req.body)
+            .then(() => {
+                res.redirect('back')
+            })
+            .catch(next)
+    }
+
+    // soft delete
+    // DELETE /courses/:id
+    delete(req, res, next) {
+        // res.json(req.body)
+        Course.delete({_id: req.params.id}, req.body)
             .then(() => {
                 res.redirect('back')
             })
